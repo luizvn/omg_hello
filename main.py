@@ -15,7 +15,8 @@ class Calculadora:
 
     @staticmethod
     def Fatorial(numero: float) -> float:
-        if numero == 1: return numero
+        if numero < 0: return -1
+        if numero == 1 or numero == 0: return 1
 
         return numero * Calculadora.Fatorial(numero-1)
 
